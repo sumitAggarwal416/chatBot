@@ -1,4 +1,4 @@
-#chatbot
+# chatBot
 
 This is a chatBot that uses Natural Language Processing (NLP), Bag of Words Pipeline and Artificial Neural Networks reply with appropriate responses to your input.
 
