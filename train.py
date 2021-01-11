@@ -38,7 +38,7 @@ for (pattern_sentence, tag) in xy:
     x_train.append(bag)
 
     label = tags.index(tag)
-    y_train.append(label)  # CrossEntropyLoss
+    y_train.append(label)  
 
 x_train = np.array(x_train)
 y_train = np.array(y_train)
@@ -49,16 +49,12 @@ class C():
         return "done"
 
 
-class chatDataset(Dataset):  # inheriting Dataset class
-    # this is constructor
-    # self is basically the this keyword in java
+class chatDataset(Dataset):
     def __init__(self):
-        # these are attributes and its fine to do this
         self.n_samples = len(x_train)
         self.x_data = x_train
         self.y_data = y_train
 
-    # dataset[idx]
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
 
@@ -66,8 +62,7 @@ class chatDataset(Dataset):  # inheriting Dataset class
         return self.n_samples
 
 
-batch_size = 8 #uses mini batch gradient descent... used because x is a vector and and it outperformes if we use a
-#single example and then reshuffle at each iteration... rather it does so after looking at 8 rather than one
+batch_size = 8 
 hidden_layer_size = 8
 output_size = len(tags)  # equal to number of classes/tags we have
 input_size = len(x_train[0])  # length of each bag of words we created
@@ -75,7 +70,7 @@ learning_rate = 0.001
 num_epochs = 1000 # number of iterations in which the whole data will be processed
 
 dataset = chatDataset()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)  # multithreading
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)  
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = NeuralNet(input_size, hidden_layer_size, output_size)
