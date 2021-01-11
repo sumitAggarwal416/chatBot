@@ -1,0 +1,119 @@
+{
+  "intents": [
+    {
+      "tag": "identity",
+      "patterns": [
+        "What is your name?",
+        "Who are you?",
+        "What should I call you?",
+        "Do you have a name?"
+      ],
+      "responses": [
+        "You can call me Sumit."
+      ]
+    },
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Hola",
+        "Namaste",
+        "Bonjour"
+      ],
+      "responses": [
+        "Hey, how can I be of assistance?",
+        "Hello, thanks for visiting.",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Peace", "No, that would be all", "No, that's it for now"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye! Take care."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "Is there anything else I can help you with?"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell sports equipment like footballs, baseball gloves, basketballs, specialized shoes, cleats, etc.",
+        "We have all kinds of sports equipment and clothing."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "Do you accept AMEX?",
+        "Do you take gift cards?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard, AMEX and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 business days",
+        "Shipping takes 2-4 business days",
+        "You can expect it after 2-4 business days of putting your order with us."
+      ]
+    },
+    {
+      "tag": "delivery-fee",
+      "patterns": [
+        "Is the delivery free?",
+        "Do you charge extra for delivery?"
+      ],
+      "responses": [
+        "The delivery is free for orders over $50. Else it is $5.00."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "What's so funny?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "I'm going to open an adventure clothing store for old ladies. It'll be called Nana Republic",
+        "What kind of clothing do Karens wear? A lawsuit.",
+        "A guy walks into a psychiatrist's office wearing nothing but saran wrap for clothing.The psychiatrist says \"I can clearly see you're nuts.\"",
+        "I bought camoflauge clothing. No one seemed to notice.",
+        "Why does Batman wear Dark clothing? Batman doesn't want to get shot. Why does Robin wear bright clothing? Batman doesn't want to get shot."
+      ]
+    }
+  ]
+}
