@@ -42,7 +42,7 @@ while (True):
     _, predictions = torch.max(output, dim=1)
     tag = tags[predictions.item()]
 
-    probabilities = torch.softmax(output, dim=1) #softmax is advanced sigmoid function... non-linear model
+    probabilities = torch.softmax(output, dim=1) 
     probability = probabilities[0][predictions.item()]
 
     if probability.item() > 0.75:
